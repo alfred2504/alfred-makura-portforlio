@@ -33,16 +33,17 @@ header .profile-image {
   object-fit: cover;
   position: absolute; /* Position the profile image absolutely */
   top: 20px; /* Adjust top position */
-  left: 20px; /* Position the profile image to the left */
+  left: 500px; /* Position the profile image to the left */
 }
 
 header h1 {
-  margin-left: 140px; /* Space to the right of the profile image */
+  margin-left: 120px; /* Space to the right of the profile image */
   margin-bottom: 10px;
+  color: #fff; /* Set header title color to white */
 }
 
 header nav {
-  margin-left: 140px; /* Align with header h1 */
+  margin-left: 120px; /* Align with header h1 */
 }
 
 header nav ul {
@@ -79,6 +80,7 @@ header nav ul li a:hover {
 #banner h2 {
   font-size: 2.5rem;
   margin: 20px 0 10px;
+  color: #007bff; /* Set banner heading color to blue */
 }
 
 #banner p {
@@ -91,7 +93,6 @@ header nav ul li a:hover {
   display: flex;
   flex-wrap: wrap;
   margin: 20px;
-  background-color: #dcdcdc; /* Set background color to grey */
 }
 
 .main-column {
@@ -106,6 +107,7 @@ header nav ul li a:hover {
 .main-column section h2 {
   font-size: 2rem;
   margin-bottom: 10px;
+  color: #007bff; /* Set section headings color to blue */
 }
 
 .main-column section ul {
@@ -133,6 +135,7 @@ header nav ul li a:hover {
 .sidebar section h2 {
   font-size: 2rem;
   margin-bottom: 10px;
+  color: #007bff; /* Set section headings color to blue */
 }
 
 .sidebar section ul {
@@ -159,44 +162,46 @@ footer {
 
 .footer-left, .footer-center, .footer-right {
   flex: 1;
-  padding: 20px;
-  min-width: 200px;
+  padding: 0 20px;
 }
 
-.footer-left img, .social-icons img {
+.footer-left h2, .footer-center h2, .footer-right h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #007bff; /* Set footer headings color to blue */
+}
+
+.footer-left .contact-methods p {
+  margin-bottom: 10px;
+}
+
+.footer-left .social-icons a {
   margin-right: 10px;
 }
 
-.contact-methods p, .social-icons a {
-  margin-bottom: 10px;
+.footer-left .social-icons img {
+  width: 30px;
+  height: 30px;
 }
 
-.footer-right h3 {
-  margin-bottom: 10px;
-}
-
-#subscribe-form {
+.footer-right form {
   display: flex;
   flex-direction: column;
 }
 
-#subscribe-form input[type="email"] {
+.footer-right form input {
   padding: 10px;
-  width: 70%;
-  border: none;
-  border-radius: 5px;
   margin-bottom: 10px;
 }
 
-#subscribe-form button {
-  padding: 10px 20px;
-  background: green;
-  color: #fff;
+.footer-right form button {
+  padding: 10px;
+  background: #fff;
+  color: #007bff;
   border: none;
-  border-radius: 5px;
   cursor: pointer;
 }
 
-#subscribe-form button:hover {
-  background: darkgreen;
+.footer-right form button:hover {
+  background: #ddd;
 }
