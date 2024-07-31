@@ -33,7 +33,7 @@ header .profile-image {
   object-fit: cover;
   position: absolute; /* Position the profile image absolutely */
   top: 20px; /* Adjust top position */
-  left: 20px; /* Position the profile image to the left */
+  left: 500px; /* Position the profile image to the left */
 }
 
 header h1 {
