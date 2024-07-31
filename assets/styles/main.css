@@ -10,7 +10,7 @@ body {
   font-family: 'Arial', sans-serif;
   line-height: 1.4; /* Reduced line spacing */
   color: #333;
-  background-color: #fff; /* Set background color to white */
+  background-color: #f0f0f0; /* Set background color to light grey */
 }
 
 /* Styles for the header */
@@ -18,23 +18,41 @@ header {
   background: #007bff;
   color: #fff;
   padding: 20px 0;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative; /* Ensure relative positioning for absolute children */
+  flex-direction: column;
+  height: 150px; /* Adjust height as needed */
 }
 
 header .profile-image {
   border-radius: 50%;
-  width: 150px;
-  height: 150px;
+  width: 105px;
+  height: 135px;
   object-fit: cover;
+  position: absolute; /* Position the profile image absolutely */
+  top: 20px; /* Adjust top position */
+  left: 20px; /* Position the profile image to the left */
+}
+
+header h1 {
+  margin-left: 140px; /* Space to the right of the profile image */
+  margin-bottom: 10px;
+}
+
+header nav {
+  margin-left: 140px; /* Align with header h1 */
 }
 
 header nav ul {
   list-style: none;
   padding: 0;
+  margin: 0;
+  display: flex; /* Display items in a row */
 }
 
 header nav ul li {
-  display: inline;
   margin: 0 10px;
 }
 
@@ -73,6 +91,7 @@ header nav ul li a:hover {
   display: flex;
   flex-wrap: wrap;
   margin: 20px;
+  background-color: #dcdcdc; /* Set background color to grey */
 }
 
 .main-column {
